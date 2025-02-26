@@ -17,6 +17,8 @@ public:
     void deleteStaff(int ID);
     void updateStudent(int ID,string name,string branch);
     void updateStaff(int ID,string name,string department);
+    void findStudent(int id);
+    Staff* findStaff(int id);
     void displayStudent();
     void displayStaff();
     ~College();
