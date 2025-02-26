@@ -1,5 +1,4 @@
 #include "Staff.h"
-
 Staff::Staff(int ID, string name, string department)
 {
     m_ID = ID;

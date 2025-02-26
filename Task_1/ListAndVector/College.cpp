@@ -35,6 +35,7 @@ void College::updateStudent(int ID, string name, string branch)
             i->setDetails(name,branch);
         }
     }
+    cout<<"Student with ID "<<ID<<" not found"<<endl;
 }
 
 void College::addStaff(int ID, string name, string department)
@@ -67,6 +68,21 @@ void College::updateStaff(int ID, string name, string department)
             i->setStaffDetails(name,department);
         }
     }
+    cout<<"Staff with ID "<<ID<<" not found"<<endl;
+}
+
+void College::findStudent(int ID)
+{
+    for(auto i = m_students.begin();i != m_students.end();i++)
+    {
+        if(i->getID() == ID)
+        {
+            cout<<i->getName()<<endl;
+            cout<<i->getBranch()<<endl;
+        }
+    }
+    cout<<"Student with ID "<<ID<<" not found"<<endl;
+
 }
 
 void College::displayStudent()
